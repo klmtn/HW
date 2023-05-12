@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+  </head>
+
+  <body>
+    <label for="town">От къде сте?</label>
+    <select id="town" name="town">
+      <option value="София">София</option>
+      <option value="Париж">Париж</option>
+      <option value="Лондон">Лондон</option>
+    </select>
+    <button onclick="greetings();">ОК</button>
+
+    <script>
+      function greetings() {
+        // DO NOT CHANGE
+        // взимаме въведената от потребителя стойност за град:
+        var userTown = document.getElementById("town").value;
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+        // Task 1: Изпишете в конзолата съдържанието на променливата userTown
+        console.log(userTown);
+
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+        // Task 2:
+        // ако потребителят е избрал 'София', то да се изпише в конзолата:
+        // "Здравей!"
+        // ако потребителят е избрал 'Париж', то да се изпише в конзолата:
+        // "Salut!"
+        // ако потребителят е избрал 'Лондон', то да се изпише в конзолата:
+        // "Hi!"
+        // --> YOUR CODE STARTS HERE <--
+
+        // if ((userTown = "София")) {
+        //   status = "Здравей!";
+        //   console.log(status);
+        // } else if ((userTown = "Париж")) {
+        //   status = "Salut!";
+        //   console.log(status);
+        // } else {
+        //   status = "Hi!";
+        // }
+
+        if (userTown === "София") {
+          console.log("Здравей!");
+        } else if (userTown === "Париж") {
+          console.log("Salute!");
+        } else {
+          console.log("Hi!");
+        }
+
+        // --> YOUR CODE ENDS HERE <--
+
+        // DO NOT CHANGE
+        // внимавайте, да не изтриете затварящата '}' фигурна скоба по-долу :)
+      }
+    </script>
+  </body>
+</html>

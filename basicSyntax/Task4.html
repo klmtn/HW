@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изчисляване на BMI</title>
+</head>
+<body>
+
+<label for="weigh">Тегло</label>
+<input type="number" name="" id="weight">
+<label for="height">Височина</label>
+<input type="number" name="" id="height">
+<button onclick="calculate()">Изчисли</button>
+<button type="button" onclick="ClearFields();">Изчисти</button>
+
+
+
+<script>
+
+    function calculate() {
+        let weight = document.getElementById("weight").value
+        let height = document.getElementById("height").value
+        let bmi = (weight / (height * height));
+        console.log(bmi.toFixed(3))
+
+    }
+
+    function ClearFields() {
+        document.getElementById("weight").value = "";
+        document.getElementById("height").value = "";
+    }
+
+    </script>
+
+</body>
+
+
+</html>
